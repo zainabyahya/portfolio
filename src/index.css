@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kreon:wght@300..700&family=Teko:wght@300..700&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Teko", system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body * {
+  @apply transition-colors duration-300;
+}
+
+code {
+  font-family: "Teko", system-ui, 'Segoe UI', Roboto, sans-serif;
+
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-in-out forwards;
+}
+
+/* about page */
+
+.about-section,
+.availability-section {
+  opacity: 0;
+  animation: fadeInAnimation 3s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resize-overlay {
+  transition: opacity 0.3s ease-in-out;
+}
