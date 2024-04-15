@@ -1,6 +1,6 @@
 import React from 'react';
 import Animated from './Animated';
-import avatar from "../stroke.png"
+// import avatar from "../stroke.png"
 
 
 const Home = () => {
