@@ -41,6 +41,7 @@ code {
 .availability-section {
   opacity: 0;
   animation: fadeInAnimation 3s ease forwards;
+
 }
 
 @keyframes fadeInAnimation {
