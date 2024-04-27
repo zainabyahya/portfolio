@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import { projects } from "../projects";
 import fastfood from "../images/1.png";
 import pokemon from "../images/2.png";
@@ -8,6 +9,8 @@ import Animated from './Animated';
 
 
 const Projects = ({ stop }) => {
+    const navigate = useNavigate();
+
     const handleNavigate = (url) => {
         window.open(url, '_blank');
     };
@@ -41,7 +44,7 @@ const Projects = ({ stop }) => {
                         ))}
                 </div>
                 {stop && (
-                    <sub onClick={() => { handleNavigate("/projects"); window.scrollTo(0, 0); }} className='p-5 mr-[10vw] text-xl self-end cursor-pointer'>
+                    <sub onClick={() => { navigate("/projects"); window.scrollTo(0, 0); }} className='p-5 mr-[10vw] text-xl self-end cursor-pointer'>
                         see more ..
                     </sub>
                 )}
