@@ -16,14 +16,6 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Togood",
-        github: "https://github.com/zainabyahya/togood",
-        link: "https://strong-zuccutto-03541b.netlify.app",
-        imgSrc: 'src/images/3.png'
-
-    },
-    {
-        id: 3,
         title: "Pokemon Website",
         github: "https://github.com/zainabyahya/JS-Pokemon_API_Project",
         link: "https://cheery-druid-8b6438.netlify.app",

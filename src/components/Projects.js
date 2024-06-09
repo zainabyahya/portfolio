@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { projects } from "../projects";
 import fastfood from "../images/1.png";
 import pokemon from "../images/2.png";
-import togood from "../images/3.png";
 import memory from "../images/4.png";
 import Animated from './Animated';
 
@@ -15,7 +14,7 @@ const Projects = ({ stop }) => {
         window.open(url, '_blank');
     };
 
-    const images = [memory, fastfood, togood, pokemon];
+    const images = [memory, fastfood, pokemon];
     return (
         <Animated>
             <div className='flex flex-col items-center justify-center w-full p-10 dark:bg-black dark:text-white'>
