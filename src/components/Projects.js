@@ -20,8 +20,22 @@ const Projects = ({ stop }) => {
             <div className='flex flex-col items-center justify-center w-full p-10 dark:bg-black dark:text-white'>
                 <h1 className='text-5xl'>Projects</h1>
                 <div className='w-[80vw] p-10 flex flex-wrap justify-center gap-10 dark:bg-black dark:text-white dark:border-white'>
+                    <div key={6} className={`transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none flex flex-col justify-center items-center w-[25rem] p-10 border-[1px] border-black rounded-3xl shadow-xl dark:border-white`}>
+                        <span className='shrink-0 text-3xl text-center p-3 text-black dark:bg-black dark:text-white dark:border-white'>بالعافية</span>
+                        <div className='flex justify-evenly gap-4'>
+                            <sub className='text-2xl p-3 hover:underline dark:bg-black dark:text-white'><a href={"https://github.com/zainabyahya/food-client"} target="_blank" rel="noopener noreferrer">Client Side</a></sub>
+                            <sub className='text-2xl p-3 hover:underline dark:bg-black dark:text-white'><a href={"https://github.com/zainabyahya/food-server"} target="_blank" rel="noopener noreferrer">Server Side</a></sub>
+                        </div>
+                    </div>
+                    <div key={7} className={`transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none flex flex-col justify-center items-center w-[25rem] p-10 border-[1px] border-black rounded-3xl shadow-xl dark:border-white`}>
+                        <span className='shrink-0 text-3xl text-center p-3 text-black dark:bg-black dark:text-white dark:border-white'>Stories</span>
+                        <div className='flex justify-evenly gap-4'>
+                            <sub className='text-2xl p-3 hover:underline dark:bg-black dark:text-white'><a href={"https://github.com/zainabyahya/blog-client"} target="_blank" rel="noopener noreferrer">Client Side</a></sub>
+                            <sub className='text-2xl p-3 hover:underline dark:bg-black dark:text-white'><a href={"https://github.com/zainabyahya/blog-server"} target="_blank" rel="noopener noreferrer">Server Side</a></sub>
+                        </div>
+                    </div>
                     {stop
-                        ? projects.slice(0, 3).map((project, index) => (
+                        ? projects.slice(0, 1).map((project, index) => (
                             <div key={project.id} className={`transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none flex flex-col justify-center items-center w-[25rem] p-10 border-[1px] border-black rounded-3xl shadow-xl dark:border-white`}>
                                 <span className='shrink-0 text-3xl text-center p-3 text-black dark:bg-black dark:text-white dark:border-white'>{project.title}</span>
                                 <img src={images[project.id]} alt={project.title} className='m-5' />
@@ -48,7 +62,7 @@ const Projects = ({ stop }) => {
                     </sub>
                 )}
             </div>
-        </Animated>
+        </Animated >
     );
 };
 
