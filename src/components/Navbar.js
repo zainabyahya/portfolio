@@ -37,7 +37,7 @@ const Navbar = () => {
                 </div>
                 <div id='left-nav' className='flex justify-center item-center'>
                     <div id='dark-mode md:mr-5'>
-                        <span onClick={() => darkModeHandler()} className='p-5  dark:text-white'>
+                        <span onClick={() => darkModeHandler()} className='p-10 dark:text-white'>
                             {
 
                                 dark && <IoSunny /> // render sunny when dark is true
