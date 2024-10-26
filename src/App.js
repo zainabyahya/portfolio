@@ -7,31 +7,31 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import NotFound from "./components/NotFound";
-import ResizeOverlay from './components/ResizeOverlay';
+// import ResizeOverlay from './components/ResizeOverlay';
 
 const App = () => {
-  const [isResizing, setIsResizing] = useState(false);
+  // const [isResizing, setIsResizing] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsResizing(true);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsResizing(true);
 
-      clearTimeout(window.resizeTimer);
-      window.resizeTimer = setTimeout(() => {
-        setIsResizing(false);
-      }, 500);
-    };
+  //     clearTimeout(window.resizeTimer);
+  //     window.resizeTimer = setTimeout(() => {
+  //       setIsResizing(false);
+  //     }, 500);
+  //   };
 
-    window.addEventListener('resize', handleResize);
+  //   window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
   return (
     <div>
-      {isResizing && <ResizeOverlay />}
+      {/* {isResizing && <ResizeOverlay />} */}
       <div>
         <Navbar />
         <Routes>
